@@ -1,0 +1,26 @@
+.card {
+    width: 300px;
+    padding: 20px 20px 20px 35px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.card::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background: #3a86ff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.card:first-child::before {
+    background: #ffbe0b;
+}
